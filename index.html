@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>WX Slider</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/wxSlider.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="wx-slider-wrapper">
+    <h1 class="site-name"> WX Slider - v0.7.7 </h1>
+
+    <div class="wx-slider">
+      <ul class="slider-item-list">
+        <li class="slide"><img src="images/slide_1.jpg" alt="slide 1"></li>
+        <li class="slide"><img src="images/slide_2.jpg" alt="slide 2"></li>
+        <li class="slide"><img src="images/slide_3.jpg" alt="slide 3"></li>
+        <li class="slide"><img src="images/slide_4.jpg" alt="slide 4"></li>
+        <li class="slide"><img src="images/slide_5.jpg" alt="slide 5"></li>
+      </ul>
+    </div>
+
+    <div class="slide-navigator">
+      <a href="#" class="navi prev">Prev</a>
+      <a href="#" class="navi next">Next</a>
+    </div>
+
+    <label for="direction-changer">Slide direction:</label>
+    <select name="direction-changer" class="direction-changer">
+      <option value="ltr">→ Left to Right</option>
+      <option value="rtl">← Right to Left</option>
+      <option value="utd">↓ Up to Down</option>
+      <option value="dtu">↑ Down to Up</option>
+    </select>
+
+    <label for="sequence-changer">Sliding sequence:</label>
+    <select name="sequence-changer" class="sequence-changer">
+      <option value="inc"> 1...2...3 Inc.</option>
+      <option value="dec"> 3...2...1 Dec.</option>
+    </select>
+
+    <label for="effect-changer">Sliding effect:</label>
+    <select name="effect-changer" class="effect-changer">
+      <option value="fading">Fading</option>
+      <option value="sliding">Sliding</option>
+    </select>
+
+  </div>
+
+</body>
+</html>
